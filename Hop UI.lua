@@ -130,6 +130,7 @@ NotifyHop = function(reasonreal,time)
         return 
     end   
     if not time then time = 3 end 
+    Window:Minimize()
     HopGui.Enabled = true   
     Blur.Enabled = true 
     Reason.Text = "Discord : "..reasonreal
@@ -143,4 +144,4 @@ end
 ButtonCall.MouseButton1Click:Connect(function()
     getgenv().CancelHop = true  
     NotifyHop()
-end)  
+end) 
