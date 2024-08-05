@@ -138,9 +138,9 @@ NotifyHop = function(reasonreal,time)
         wait(1) 
     end  
     HopIn.Text = "Hopping server in 0s"
-    Hop()
+    Hop(10)
 end
 ButtonCall.MouseButton1Click:Connect(function()
     getgenv().CancelHop = true  
     NotifyHop()
-end)   
+end)  
